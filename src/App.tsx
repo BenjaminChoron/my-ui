@@ -3,6 +3,8 @@ import StarRating from "./components/StarRating/StarRating";
 import Box from "./components/Layout/Box/Box";
 import Description from "./components/Layout/Description/Description";
 
+import StartRating from "./assets/examples/StarRating.png";
+
 function App() {
   // StarRating component
   const [rating, setRating] = React.useState(3);
@@ -56,6 +58,7 @@ function App() {
         <Description
           description={starRatingDescription}
           propsList={starRatingPropsList}
+          example={StartRating}
         />
       </Box>
     </div>
