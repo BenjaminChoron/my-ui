@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.star-container {
+  display: flex;
+}
+
+.star {
+  display: block;
+  cursor: pointer;
+}
+
+.text {
+  line-height: 1;
+  margin: 0;
+}
