@@ -12,6 +12,9 @@
   display: block;
   cursor: pointer;
 }
+.star:focus {
+  outline: none;
+}
 
 .text {
   line-height: 1;

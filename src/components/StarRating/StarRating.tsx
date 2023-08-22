@@ -29,10 +29,15 @@ function Star({
       className={styles.star}
       style={starStyle}
       onClick={onRate}
-      onKeyDown={onHoverIn}
+      onFocus={onHoverIn}
+      onBlur={onHoverOut}
       onMouseEnter={onHoverIn}
-      onKeyUp={onHoverOut}
       onMouseLeave={onHoverOut}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") {
+          onRate();
+        }
+      }}
     >
       {full ? (
         <svg
